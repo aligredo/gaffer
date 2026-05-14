@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-navy text-chalk font-barlow antialiased;
+  }
+  h1, h2, h3, h4 {
+    @apply font-bebas;
+  }
+}
+
+@layer utilities {
+  .glow-accent {
+    box-shadow: 0 0 12px theme('colors.accent'), 0 0 24px theme('colors.accent / 40%');
+  }
+  .glow-gold {
+    box-shadow: 0 0 12px theme('colors.gold'), 0 0 24px theme('colors.gold / 40%');
+  }
+}
